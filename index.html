@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Tyagi - Personal Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/Icon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9fb63f993c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1OVy3AsQmMEBp0udFIAAMzghbOyFARGDg?usp=sharing">Certificates</a></li>
+                <i class="fas fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span class="blue">Akshay</span> Tyagi<br>From <span class="saffron">IN<span class="white">D</span><span class="green">IA</span></span></p></h1>
+        </div>
+        <div class="text3">And I'm a <span class="typing"></span></div>
+        <a href="https://drive.google.com/file/d/1586uBJT38uztc1gGtnsgqcIZO9Vet5Xq/view?usp=sharing" download class="btn">My Resume</a>
+    </div>
+</div>
+
+<!--About Section-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <br>
+                <p>Hi, My name is Akshay Tyagi and I startd my Web Development journey in 2022 and side by side
+                    I also work on Python projects. I also like Competative Programming in CPP.
+                    My hobbies are travelling, reading Books and creating animations and video editing.
+                    And my greatest strength is that I never go back on my words. </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Front End Development</li>
+                        <li><span>CPP Programming</span><br>C++(Intermediate)</li>
+                        <li><span>Python Programming</span><br>Python(Intermediate)</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022</span><br>Google Digital Workshop on the Fundamentals of digital marketing</li>
+                        <li><span>2023</span><br>Cognizant's Virtual Internship</li>
+                        <li><span>2023</span><br>React Internshala Trainings</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017-2018</span><br>Class 10  : 8.4 cgpa</li>
+                        <li><span>2019-2020</span><br>Class 12(PCM)  : 7.0 cgpa</li>
+                        <li><span>2020-2024</span><br>B.Tech Computer Science  : 7.3 cgpa(as of in 7th Semester)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------Projects------------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div>
+                <i class="fa-regular fa-window-restore"></i>
+                <h2>Video Streaming Website</h2>
+                <p>This is a Front-end Development Project, here I created a website where one can go and watch the videos that I uploaded.</p>
+                <a href="https://github.com/AkshayTyagi292/Video-Streaming-Platform">Github Link</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Rock Paper Scissors Game</h2>
+                <p>This Project is a game created in Python using random module. Here you are asked how many chances you want to play and then you choose rock or paper or scissors to play. At last it tells you the total score nad whether you win or loss.</p>
+                <a href="https://github.com/AkshayTyagi292/Rock-Paper-Scissors">Github Link</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Sorting Visualiser</h2>
+                <p>This is a Front-end Development and Data Structure based project where you can visualize the different sortings performed.</p>
+                <br><br>
+                <a href="https://github.com/AkshayTyagi292/Sorting-Visualizer">Github Link</a>
+                <!--<a href="#projects">Github Link</a>-->
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<!-- ----------contact------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>akshaytyagi946@gmail.com</p>
+                <p><i class="fa-brands fa-whatsapp"></i>9829158094</p>
+                <p><i class="fa-solid fa-phone"></i>9829158094, 6375033498</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/akshay-tyagi-248151197/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AkshayTyagi292"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/akshay_tyagi292/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/AkshayTyagi_292"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter your email" required>
+                    <textarea name="Message" rows="6" placeholder="Enter your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© copyright 2023 Akshay Tyagi.</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");        
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzHv2YtR6eR3RS_xhxS5IM6fBlbTTpc7ba0vox5zDEbSAW-jlZUaNlWxSfXDoVHKdbCxA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    <!-- Typing Animation -->
+    var typed = new Typed(".typing",{
+        strings: ["Web Designer", "UI/UX Designer", "Developer"],
+        typeSpeed: 100,
+        backspeed: 80,
+        loop: true
+    });
+  </script>
+    
+</body>
+</html>
